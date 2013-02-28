@@ -1,63 +1,33 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com)
+#Wheaton College CS Club Members Page
 
-HTML5 Boilerplate is a professional front-end template for building fast,
-robust, and adaptable web apps or sites.
+###Create your own member page
 
-This project is the product of many years of iterative development and combined
-community knowledge. It does not impose a specific development philosophy or
-framework, so you're free to architect your code in the way that you want.
+URL: [http://tridnguyen.com/wheatoncs](http://tridnguyen.com/wheatoncs)
 
-* Source: [https://github.com/h5bp/html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
-* Homepage: [http://html5boilerplate.com](http://html5boilerplate.com)
-* Twitter: [@h5bp](http://twitter.com/h5bp)
+##Documentation
 
+###How to run it locally
+You can easily do a ``git clone`` to download the code to your computer. Since this is just HTML/CSS/JavaScript, any computer with a browser will be able to render.
 
-## Quick start
+###How to push changes to the live site
+In order to push changes to this repo, you will need to be added first. [Contact Tri](mailto:nguyen_tri@wheatonma.edu) to have your github account set up.
 
-Choose one of the following options:
+After it is set up, you can just make any changes you would like and perform a ``git push``. The code will be automatically deployed to the live site.
 
-1. Download the latest stable release from
-   [html5boilerplate.com](http://html5boilerplate.com/) or a custom build from
-   [Initializr](http://www.initializr.com).
-2. Clone the git repo — `git clone
-   https://github.com/h5bp/html5-boilerplate.git` - and checkout the tagged
-   release you'd like to use.
+**Alternatively**
 
+You could also ``fork`` this repo, make changes to it as much as you would like, and create a ``pull request``.
 
-## Features
+###How to build your own website
+1. Create your own page with the format ``your-name.html`` in the ``members`` folder.
+2. Follow the template in ``tri.html`` to see how different elements (links, stylesheets etc.) are pulled in and follow. 
+3. Feel free to make changes and add anything within the ``<div class="page">`` element.
+4. Create your own ``your-name.css`` stylesheet in the ``css`` folder. Remember to link this stylesheet to your specific html page by replacing ``<link rel=stylesheet" href="../css/tri.css">`` with your own.
+5. Add your own preview on the homepage by following the template of ``<div class="member-preview">`` in ``index.html``
+6. If you have any question, feel free to [contact Tri](mailto:nguyen_tri@wheatonma.edu) or [create an issue](https://github.com/tnguyen14/wheatoncs/issues).
 
-* HTML5 ready. Use the new elements with confidence.
-* Cross-browser compatible (Chrome, Opera, Safari, Firefox 3.6+, IE6+).
-* Designed with progressive enhancement in mind.
-* Includes [Normalize.css](http://necolas.github.com/normalize.css/) for CSS
-  normalizations and common bug fixes.
-* The latest [jQuery](http://jquery.com/) via CDN, with a local fallback.
-* The latest [Modernizr](http://modernizr.com/) build for feature detection.
-* IE-specific classes for easier cross-browser control.
-* Placeholder CSS Media Queries.
-* Useful CSS helpers.
-* Default print CSS, performance optimized.
-* Protection against any stray `console.log` causing JavaScript errors in
-  IE6/7.
-* An optimized Google Analytics snippet.
-* Apache server caching, compression, and other configuration defaults for
-  Grade-A performance.
-* Cross-domain Ajax and Flash.
-* "Delete-key friendly." Easy to strip out parts you don't need.
-* Extensive inline and accompanying documentation.
-
-
-## Documentation
-
-Take a look at the [documentation table of
-contents](/h5bp/html5-boilerplate/blob/master/doc/TOC.md). This
-documentation is bundled with the project, which makes it readily available for
-offline reading and provides a useful starting point for any documentation
-you want to write about your project.
-
-
-## Contributing
-
-Anyone and everyone is welcome to
-[contribute](/h5bp/html5-boilerplate/blob/master/CONTRIBUTING.md). Hundreds
-of developers have helped make the HTML5 Boilerplate what it is today.
+###HTML and CSS resources
+You can find further resources on HTML and CSS at the following resources:
+- [MSDN Channel 9 Beginners' Guide to HTML5 & CSS3](http://channel9.msdn.com/Series/HTML5-CSS3-Fundamentals-Development-for-Absolute-Beginners)
+- [Mozilla Developer Network CSS Reference](https://developer.mozilla.org/en/CSS/CSS_Reference)
+- [CSS-Tricks](http://css-tricks.com) - An amazing resource for web development all around.
