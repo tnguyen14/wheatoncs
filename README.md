@@ -11,7 +11,8 @@ You can easily do a ``git clone`` to download the code to your computer. Since t
 
 ###How to push changes to the live site
 Changes to the site could be made through ``pull requests``.
-1. ``fork`` this repo,
+
+1. [fork](/tnguyen14/wheatoncs/fork_select) this repo,
 2. make changes to it as much as you would like, then
 3. create a ``pull request``.
 
