@@ -39,31 +39,31 @@ Here's how you can start deploying, i.e. push all the changes from this Github r
 2. Create a new user account on apollo. In order to do this, please [contact the admin](mailto:nguyen_tri@wheatonma.edu). Note to admin: add the user to the group `webusers`.
 3. Initilize capistrano by running `capify .` on the git directory.
 4. Configure `config/deploy.rb`. Here's an example config:
-    set :application, "wheatoncs"
-    set :repository,  "git@github.com:WheatonCollegeCSClub/wheatoncs.git"
-    set :deploy_to, "/var/www/html/csclub"
-    set :branch, "master"
+		set :application, "wheatoncs"
+		set :repository,  "git@github.com:WheatonCollegeCSClub/wheatoncs.git"
+		set :deploy_to, "/var/www/html/csclub"
+		set :branch, "master"
 
-    # set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
-    # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
+		# set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
+		# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-    role :web, "155.47.41.30"                          # Your HTTP server, Apache/etc
-    role :app, "155.47.41.30"                          # This may be the same as your `Web` server
-    role :db,  "155.47.41.30", :primary => true # This is where Rails migrations will run
-    #role :db,  "your slave db-server here"
+		role :web, "155.47.41.30"                          # Your HTTP server, Apache/etc
+		role :app, "155.47.41.30"                          # This may be the same as your `Web` server
+		role :db,  "155.47.41.30", :primary => true # This is where Rails migrations will run
+		#role :db,  "your slave db-server here"
 
-    # if you want to clean up old releases on each deploy uncomment this:
-    # after "deploy:restart", "deploy:cleanup"
+		# if you want to clean up old releases on each deploy uncomment this:
+		# after "deploy:restart", "deploy:cleanup"
 
-    set :user, "your apollo server username"
-    set :scm_user, "your github username"
-    set :deploy_via, :remote_cache
+		set :user, "your apollo server username"
+		set :scm_user, "your github username"
+		set :deploy_via, :remote_cache
 
-    # if you're still using the script/reaper helper you will need
-    # these http://github.com/rails/irs_process_scripts
+		# if you're still using the script/reaper helper you will need
+		# these http://github.com/rails/irs_process_scripts
 
-    set :use_sudo, true
-    efault_run_options[:pty] = true
+		set :use_sudo, true
+		efault_run_options[:pty] = true
 
 5. Set up SSH key authentication between your computer with the server. Follow these steps:
 	. `ssh-keygen` on your computer. Note the key name you choose. The default is `id_rsa`.
