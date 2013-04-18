@@ -74,7 +74,7 @@ Here's how you can start deploying, i.e. push all the changes from this Github r
 6. Set up authentication between the server and the Github repo.
 	. Run `ssh-keygen` again, this time from your home folder on the server. Note the key name, default again is `id_rsa`.
 	. Copy the public key, in this case `id_rsa.pub`.
-	. Go to the Github repo -> Settings -> Deploy Keys. Create a new key and paste the content in there. (Please note you might not have access to this. If this is the case, please (contact the repo owner)[mailto:nguyen_tri@wheatonma.edu].)
+	. Go to the Github repo -> Settings -> Deploy Keys. Create a new key and paste the content in there. (Please note you might not have access to this. If this is the case, please [contact the repo owner](mailto:nguyen_tri@wheatonma.edu).)
 	. Test to see that it works by `ssh git@github.com` from the server. If it works, you should get a message like this `You've successfully authenticated, but GitHub does not provide shell access.  Connection to github.com closed.`
 	. You should really give yourself a pat in the back for getting this far!
 
