@@ -1,0 +1,19 @@
+h1 {
+	background-color:darkblue; 
+	color:white; 
+	padding:5px;
+}
+.breadcrumbs{
+	padding:5px
+}
+.page{
+	background-color:green;
+	border:2px solid black;
+}
+h2 {
+	color:white;
+	padding:5px;
+}
+p {
+	color:black;
+}
