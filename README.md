@@ -39,6 +39,7 @@ Here's how you can start deploying, i.e. push all the changes from this Github r
 2. Create a new user account on apollo. In order to do this, please [contact the admin](mailto:nguyen_tri@wheatonma.edu). Note to admin: add the user to the group `webusers`.
 3. Initilize capistrano by running `capify .` on the git directory.
 4. Configure `config/deploy.rb`. Here's an example config:
+
 		set :application, "wheatoncs"
 		set :repository,  "git@github.com:WheatonCollegeCSClub/wheatoncs.git"
 		set :deploy_to, "/var/www/html/csclub"
